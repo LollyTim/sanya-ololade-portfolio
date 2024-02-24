@@ -3,7 +3,6 @@ import { BiMenu } from "react-icons/bi";
 import { motion } from "framer-motion";
 import { AiOutlineClose } from "react-icons/ai";
 
-// eslint-disable-next-line
 const NavBar = () => {
   const [nav, setNav] = useState(false);
 
