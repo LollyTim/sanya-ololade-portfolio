@@ -3,7 +3,7 @@ import Typical from "react-typical";
 
 const Hero = () => {
   return (
-    <div className="h-[90.6vh] items-center justify-center flex w-[80%] text-textClr mx-auto gap-10 dark:text-textClrDark flex-col lg:flex-row">
+    <div className="h-[90.6vh] items-center justify-center flex w-[80%] text-textClr mx-auto gap-20 dark:text-textClrDark flex-col lg:flex-row">
       <div className="lg:w-[50%] w-[90%] justify-center items-start flex flex-col">
         <h1 className=" font-light text-sm lg:text-3xl">
           Hi{" "}
