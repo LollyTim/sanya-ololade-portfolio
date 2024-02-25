@@ -1,5 +1,6 @@
 import React from "react";
 import Typical from "react-typical";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
