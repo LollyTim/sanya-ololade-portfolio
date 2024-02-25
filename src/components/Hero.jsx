@@ -35,9 +35,9 @@ const Hero = () => {
           />
         </h1>
       </div>
-      <div className="lg:w-[50%] items-center flex justify-center">
+      <div className="lg:w-[50%] items-center flex justify-center ">
         <div
-          className=" lg:w-[440px] lg:h-[440px] w-[280px] h-[280px] bg-center bg-cover rounded-full"
+          className=" lg:w-[440px] lg:h-[440px] w-[280px] h-[280px] border border-accentClr dark:border-accentClrDark bg-center bg-cover rounded-full"
           style={{ backgroundImage: `url("/Sanya Ololade.jpg")` }}
         ></div>
       </div>
