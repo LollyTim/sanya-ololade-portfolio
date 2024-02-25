@@ -112,7 +112,7 @@ const NavBar = () => {
         </motion.a>
         <button
           onClick={handleNav}
-          className="hidden text-[#fff] max-[640px]:flex text-lg w-[25px]"
+          className="hidden text-textClr dark:text-textClrDark max-[640px]:flex text-lg w-[25px]"
         >
           <BiMenu size={25} />
         </button>
@@ -149,10 +149,11 @@ const NavBar = () => {
               duration: 1,
             }}
           >
-            LollyTech
+            <span className=" text-textClr dark:text-textClrDark"> &lt; L</span>
+            T /&gt;
           </motion.h1>
           <AiOutlineClose
-            className="cursor-pointer"
+            className=" text-textClr dark:text-textClrDark cursor-pointer"
             size={25}
             onClick={handleNav}
           />
@@ -160,7 +161,7 @@ const NavBar = () => {
         <div className="w-[90%] justify-center mx-auto flex flex-col items-center gap-5">
           <a
             href="/"
-            className="p-2 w-fit hover:bg-[#010314] justify-center items-center mx-auto rounded-lg transition-colors"
+            className="p-2 w-fit text-textClr dark:text-textClrDark justify-center items-center mx-auto rounded-lg transition-colors"
           >
             Me
           </a>
@@ -168,7 +169,7 @@ const NavBar = () => {
             onClick={() => {
               setNav(false);
             }}
-            className="p-2 w-fit justify-center items-center hover:bg-[#010314] rounded-lg transition-colors"
+            className="p-2 w-fit justify-center items-center text-textClr dark:text-textClrDark  rounded-lg transition-colors"
           >
             Projects
           </a>
@@ -176,7 +177,7 @@ const NavBar = () => {
             onClick={() => {
               setNav(false);
             }}
-            className="p-2 text-nowrap w-fit justify-center items-center hover:bg-[#010314] rounded-lg transition-colors"
+            className="p-2 text-nowrap w-fit text-textClr dark:text-textClrDark justify-center items-center rounded-lg transition-colors"
           >
             Services
           </a>
@@ -191,7 +192,7 @@ const NavBar = () => {
               ease: "easeIn",
               duration: 1,
             }}
-            className="text-[#fff] items-center flex gap-1 border border-[#282B46] rounded-full py-2 px-3 font-SatoshiLight font-medium"
+            className=" text-textClr dark:text-textClrDark items-center flex gap-1 border border-[#282B46] rounded-full py-2 px-3 font-SatoshiLight font-medium"
           >
             {" "}
             <svg
@@ -220,7 +221,7 @@ const NavBar = () => {
                 </clipPath>
               </defs>
             </svg>
-            <p>Let's Talk</p>
+            <p className="text-textClr dark:text-textClrDark">Let's Talk</p>
           </motion.a>
         </div>
       </motion.div>
