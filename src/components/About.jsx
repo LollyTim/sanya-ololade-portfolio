@@ -3,9 +3,9 @@ import Whatsapp from "./images/whatsapp.png";
 import Instagram from "./images/instagram.png";
 import Github from "./images/github.png";
 import Linkedin from "./images/linkedin.png";
-import X from "./images/x.png";
+import X from "./images/x.svg";
 import Facebook from "./images/facebook.png";
-import { RiTwitterXLine } from "react-icons/ri";
+
 import React from "react";
 
 const About = () => {
@@ -19,7 +19,7 @@ const About = () => {
       link: "",
     },
     {
-      url: <RiTwitterXLine />,
+      url: X,
       link: "",
     },
     {
@@ -107,10 +107,7 @@ const About = () => {
           <div className=" rounded-2xl dark:bg-darkgbg bg-lightgbg md:col-span-2 flex">
             {socialIcons.map((icon, i) => (
               <a href={icon.link} key={i} className=" w-20 text-[50px]">
-                <img
-                  src={icon.url}
-                  alt="\images\5296499_fb_facebook_facebook logo_icon.png"
-                />
+                <img src={icon.url} alt="" />
               </a>
             ))}
           </div>
