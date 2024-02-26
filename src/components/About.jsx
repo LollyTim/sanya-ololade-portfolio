@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import Whatsapp from "./images/whatsapp.png";
-import Instagram from "./images/instagram.png";
-import Github from "./images/github.png";
-import Linkedin from "./images/linkedin.png";
-import X from "./images/x.svg";
-import Facebook from "./images/facebook.png";
+import Instagram from "./images/insta.svg";
+import Github from "./images/github.svg";
+import Linkedin from "./images/linkedin.svg";
+import X from "./images/svg1.svg";
+import Facebook from "./images/facebook.svg";
 
 import React from "react";
 
@@ -12,23 +12,23 @@ const About = () => {
   const socialIcons = [
     {
       url: Instagram,
-      link: "",
+      link: "https://www.instagram.com/sanya_ololade/",
     },
     {
       url: Linkedin,
-      link: "",
+      link: "https://www.linkedin.com/in/ololade-sanya-106990272/",
     },
     {
       url: X,
-      link: "",
-    },
-    {
-      url: Facebook,
-      link: "",
+      link: "https://twitter.com/Sanya_Ololade",
     },
     {
       url: Github,
-      link: "",
+      link: "https://github.com/LollyTim",
+    },
+    {
+      url: Facebook,
+      link: "https://web.facebook.com/profile.php?id=61552501215762",
     },
   ];
   return (
@@ -104,10 +104,10 @@ const About = () => {
           </div>
         </div>
         <div className=" md:w-full flex flex-col md:grid md:grid-cols-5 md:auto-cols-[200px] gap-6 ">
-          <div className=" rounded-2xl dark:bg-darkgbg bg-lightgbg md:col-span-2 flex">
+          <div className=" gap-2 rounded-2xl dark:bg-darkgbg bg-lightgbg md:col-span-2 flex py-2 px-4 justify-center items-center">
             {socialIcons.map((icon, i) => (
-              <a href={icon.link} key={i} className=" w-20 text-[50px]">
-                <img src={icon.url} alt="" />
+              <a href={icon.link} target="_blank" key={i} className=" ">
+                <img src={icon.url} alt="" className=" size-12" />
               </a>
             ))}
           </div>

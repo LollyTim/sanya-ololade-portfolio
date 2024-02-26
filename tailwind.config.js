@@ -66,7 +66,6 @@ module.exports = {
       backgroundImage: {
         darkgbg: "var(--gradirnt-dark)",
         lightgbg: "var(--gradirnt-light)",
-        "footer-texture": "url('/img/footer-texture.png')",
       },
     },
   },
