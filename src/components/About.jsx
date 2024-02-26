@@ -5,6 +5,7 @@ import Github from "./images/github.png";
 import Linkedin from "./images/linkedin.png";
 import X from "./images/x.png";
 import Facebook from "./images/facebook.png";
+import { RiTwitterXLine } from "react-icons/ri";
 import React from "react";
 
 const About = () => {
@@ -18,7 +19,7 @@ const About = () => {
       link: "",
     },
     {
-      url: X,
+      url: <RiTwitterXLine />,
       link: "",
     },
     {
@@ -105,7 +106,7 @@ const About = () => {
         <div className=" md:w-full flex flex-col md:grid md:grid-cols-5 md:auto-cols-[200px] gap-6 ">
           <div className=" rounded-2xl dark:bg-darkgbg bg-lightgbg md:col-span-2 flex">
             {socialIcons.map((icon, i) => (
-              <a href={icon.link} key={i}>
+              <a href={icon.link} key={i} className=" w-20 text-[50px]">
                 <img
                   src={icon.url}
                   alt="\images\5296499_fb_facebook_facebook logo_icon.png"
