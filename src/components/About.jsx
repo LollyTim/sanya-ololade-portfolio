@@ -1,14 +1,39 @@
 import { motion } from "framer-motion";
-import Whatsapp from "./images/whatsapp.png";
+// import Whatsapp from "./images/whatsapp.png";
 import Instagram from "./images/insta.svg";
 import Github from "./images/github.svg";
 import Linkedin from "./images/linkedin.svg";
 import X from "./images/svg1.svg";
 import Facebook from "./images/facebook.svg";
+import CSS from "./images/css.svg";
+import expressjs from "./images/expressjs.svg";
+import tailwindCss from "./images/tailwindcss.svg";
+import StyledCompo from "./images/styled-components.png";
+import feamerMotion from "./images/framer-motion.svg";
+import ReactJs from "./images/reactjs.svg";
+import Javascript from "./images/javascript.svg";
+import Html from "./images/html.svg";
+import Mongodb from "./images/mongodb.png";
+import NodeJs from "./images/nodejs.svg";
+import NextJS from "./images/nextjs.svg";
 
 import React from "react";
 
 const About = () => {
+  const sliderVariants = {
+    initial: {
+      x: 0,
+    },
+    animate: {
+      x: "-260%",
+      opacity: 1,
+      transition: {
+        repeat: Infinity,
+        repeatType: "mirror",
+        duration: 20,
+      },
+    },
+  };
   const socialIcons = [
     {
       url: Instagram,
@@ -29,6 +54,30 @@ const About = () => {
     {
       url: Facebook,
       link: "https://web.facebook.com/profile.php?id=61552501215762",
+    },
+  ];
+
+  const Stack = [
+    {
+      logo: Html,
+    },
+    {
+      logo: CSS,
+    },
+    {
+      logo: Javascript,
+    },
+    {
+      logo: NextJS,
+    },
+    {
+      logo: StyledCompo,
+    },
+    {
+      logo: feamerMotion,
+    },
+    {
+      logo: tailwindCss,
     },
   ];
   return (
@@ -111,8 +160,35 @@ const About = () => {
               </a>
             ))}
           </div>
-          <div className=" rounded-2xl dark:bg-darkgbg bg-lightgbg md:col-span-2"></div>
-          <div className=" rounded-2xl dark:bg-darkgbg bg-lightgbg h-[160px]"></div>
+          <div className=" rounded-2xl dark:bg-darkgbg bg-lightgbg md:col-span-2 flex justify-center items-center gap-4 py-2 px-5">
+            {Stack.map((each, id) => (
+              <div key={id}>
+                <img
+                  src={each.logo}
+                  alt=""
+                  className=" size-20 max-h-10 w-14"
+                />
+              </div>
+            ))}
+          </div>
+          <div className=" rounded-2xl dark:bg-darkgbg bg-lightgbg h-[160px] gap-3 justify-center items-center flex px-2 pt-3">
+            <div className=" flex flex-col justify-center items-center">
+              <img src={Mongodb} alt="" className="flex size-8" />
+              <p>M</p>
+            </div>
+            <div className=" flex flex-col justify-center items-center">
+              <img src={expressjs} alt="" className="flex size-8" />
+              <p>E</p>
+            </div>
+            <div className=" flex flex-col justify-center items-center">
+              <img src={ReactJs} alt="" className="flex size-8" />
+              <p>R</p>
+            </div>
+            <div className=" flex flex-col justify-center items-center">
+              <img src={NodeJs} alt="" className="flex size-8" />
+              <p>N</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
