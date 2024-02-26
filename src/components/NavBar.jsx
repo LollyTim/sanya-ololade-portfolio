@@ -186,7 +186,7 @@ const NavBar = () => {
           <motion.a
             href="mailto: popsabey.ux@gmail.com"
             initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            whileInView={{ x: 0, opacity: 1 }}
             transition={{
               delay: 0.1,
               x: { type: "spring", stiffness: 50 },
