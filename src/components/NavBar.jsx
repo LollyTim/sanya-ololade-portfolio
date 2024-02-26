@@ -14,7 +14,7 @@ const NavBar = () => {
     <>
       <motion.div
         initial={{ x: -100, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        animate={{ x: 0, opacity: 1 }}
         transition={{
           delay: 0.1,
           x: { type: "spring", stiffness: 50 },
@@ -29,7 +29,7 @@ const NavBar = () => {
             <motion.h1
               className=" text-accentClr text-[outfit] text-[25px] dark:text-accentClrDark "
               initial={{ x: -100, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
+              animate={{ x: 0, opacity: 1 }}
               transition={{
                 delay: 0.1,
                 x: { type: "spring", stiffness: 50 },
@@ -122,7 +122,7 @@ const NavBar = () => {
 
       <motion.div
         initial={{ x: -100, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        animate={{ x: 0, opacity: 1 }}
         transition={{
           delay: 0.1,
           x: { type: "spring", stiffness: 50 },
@@ -148,6 +148,7 @@ const NavBar = () => {
               ease: "easeIn",
               duration: 1,
             }}
+            vb
           >
             <span className=" text-textClr dark:text-textClrDark"> &lt; L</span>
             T /&gt;
@@ -161,6 +162,7 @@ const NavBar = () => {
         <div className="w-[90%] justify-center mx-auto flex flex-col items-center gap-5">
           <a
             href="/"
+            x
             className="p-2 w-fit text-textClr dark:text-textClrDark justify-center items-center mx-auto rounded-lg transition-colors"
           >
             Me
