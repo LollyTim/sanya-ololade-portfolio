@@ -69,7 +69,7 @@ const NavBar = () => {
           <p className=" cursor-pointer">Contact</p>
         </motion.div>
         <motion.a
-          href="mailto: popsabey.ux@gmail.com"
+          href="mailto: ololadetimileyin3@gmail.com"
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{
@@ -122,7 +122,7 @@ const NavBar = () => {
 
       <motion.div
         initial={{ x: -100, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
+        whileInView={{ x: 0, opacity: 1 }}
         transition={{
           delay: 0.1,
           x: { type: "spring", stiffness: 50 },
@@ -184,7 +184,7 @@ const NavBar = () => {
             Services
           </a>
           <motion.a
-            href="mailto: popsabey.ux@gmail.com"
+            href="mailto: ololadetimileyin3@gmail.com"
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{
