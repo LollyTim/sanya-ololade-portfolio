@@ -128,7 +128,12 @@ const About = () => {
             <div className="lg:w-[50%] items-center flex justify-center ">
               <div
                 className=" lg:w-[160px] lg:h-[160px] w-[200px] h-[200px] border border-accentClr dark:border-accentClrDark bg-center bg-cover rounded-full"
-                style={{ backgroundImage: `url("/Sanya Ololade.jpg")` }}
+                style={{
+                  backgroundImage: `url("/images/Sanya-ololade-full-pics.jpg")`,
+                  backgroundSize: 400,
+                  rotate: "20deg",
+                  backgroundPositionX: "-100px",
+                }}
               ></div>
             </div>
           </motion.div>
