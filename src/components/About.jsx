@@ -1,7 +1,35 @@
 import { motion } from "framer-motion";
+import Whatsapp from "./images/whatsapp.png";
+import Instagram from "./images/instagram.png";
+import Github from "./images/github.png";
+import Linkedin from "./images/linkedin.png";
+import X from "./images/x.png";
+import Facebook from "./images/facebook.png";
 import React from "react";
 
 const About = () => {
+  const socialIcons = [
+    {
+      url: Instagram,
+      link: "",
+    },
+    {
+      url: Linkedin,
+      link: "",
+    },
+    {
+      url: X,
+      link: "",
+    },
+    {
+      url: Facebook,
+      link: "",
+    },
+    {
+      url: Github,
+      link: "",
+    },
+  ];
   return (
     <div className=" w-[90%] lg:w-[90%] text-textClr flex mt-12 pb-12 dark:text-textClrDark justify-center items-center mx-auto">
       <div className="  flex flex-col gap-6 lg:w-[80%] w-[90%] mx-auto">
@@ -76,9 +104,14 @@ const About = () => {
         </div>
         <div className=" md:w-full flex flex-col md:grid md:grid-cols-5 md:auto-cols-[200px] gap-6 ">
           <div className=" rounded-2xl dark:bg-darkgbg bg-lightgbg md:col-span-2 flex">
-            <a href="">
-              <img src="" alt="" />
-            </a>
+            {socialIcons.map((icon, i) => (
+              <a href={icon.link} key={i}>
+                <img
+                  src={icon.url}
+                  alt="\images\5296499_fb_facebook_facebook logo_icon.png"
+                />
+              </a>
+            ))}
           </div>
           <div className=" rounded-2xl dark:bg-darkgbg bg-lightgbg md:col-span-2"></div>
           <div className=" rounded-2xl dark:bg-darkgbg bg-lightgbg h-[160px]"></div>
