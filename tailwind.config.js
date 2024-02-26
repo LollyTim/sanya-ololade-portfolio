@@ -63,6 +63,11 @@ module.exports = {
         lineUpDark: " 4s infinite alternate animeteStroke", // Customize animation properties here
         lineUp: " 4s infinite alternate animeteStrokeDark", // Customize animation properties here
       },
+      backgroundImage: {
+        darkgbg: "var(--gradirnt-dark)",
+        lightgbg: "var(--gradirnt-light)",
+        "footer-texture": "url('/img/footer-texture.png')",
+      },
     },
   },
   plugins: [],
