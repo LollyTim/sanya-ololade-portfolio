@@ -35,8 +35,6 @@ const Hero = () => {
           <Typical
             loop={Infinity}
             steps={[
-              "Ethusiastic Developer 😎",
-              4000,
               "Front-End Developer 💻",
               4000,
               "Backend Developer 💻",
