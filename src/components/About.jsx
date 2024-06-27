@@ -106,10 +106,11 @@ const About = () => {
             <p className="text-textClr dark:text-textClrDark font-normal text-[16px]">
               I'm Sanya Ololade, a full-stack developer with strong
               problem-solving skills and experience in building web applications
-              using JavaScript, React, and Node.js and more . I'm passionate
-              about creating user-friendly and efficient applications and am
-              currently seeking a challenging position where I can contribute to
-              exciting projects.
+              and cross platform mobile application using JavaScript, React,
+              React Native, Node.js and more . I'm passionate about creating
+              user-friendly and efficient applications and I'm currently seeking
+              a challenging position where I can contribute to exciting or new
+              projects.
             </p>
           </motion.div>
           <motion.div
@@ -202,8 +203,9 @@ const About = () => {
             className=" w-full rounded-2xl dark:bg-darkgbg bg-lightgbg lg:col-span-3 justify-center items-center flex px-6 py-3"
           >
             Full-stack dev bringing magic to the front-end with React, Next.js,
-            Tailwind CSS, Framer Motion, and DaisyUI. Powerful back-end with
-            Node.js and Express.js. Always up for a learning adventure!
+            React Native, Tailwind CSS, Framer Motion, and DaisyUI. Powerful
+            back-end with Node.js and Express.js. Always up for a learning
+            adventure!
           </motion.div>
         </div>
         <div className=" md:w-full flex flex-col md:grid md:grid-cols-5 md:auto-cols-[200px] gap-6 ">
