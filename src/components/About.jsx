@@ -177,7 +177,7 @@ const About = () => {
               className=" rounded-2xl gap-2 dark:bg-darkgbg bg-lightgbg w-full flex flex-col justify-center items-center"
             >
               <h1 className=" text-6xl">
-                8
+                5
                 <span className=" text-accentClr dark:text-accentClrDark">
                   +
                 </span>
