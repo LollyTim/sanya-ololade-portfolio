@@ -5,6 +5,7 @@ import fawazImg from "./images/fawalaw.png";
 import mentorme from "./images/mentorme.png";
 import gadgstore from "./images/gadgstore.png";
 import mohammed from "./images/mohammed.png";
+import shopifyclone from "./images/shopifyclone.png";
 
 const projects = [
   {
@@ -47,6 +48,15 @@ const projects = [
     githubLink: "https://github.com/LollyTim/mohammed-frontend",
     liveLink: "https://mohammed-frontend.vercel.app/",
   },
+  {
+    name: "Shopify Dashboard Clone",
+    description:
+      "Participated in a 2023 hackathon to replicate the Shopify dashboard using pure HTML, CSS, and JavaScript, showcasing advanced front-end development skills without relying on any frameworks.",
+    image: shopifyclone,
+    githubLink: "https://github.com/LollyTim/shopify-dashboard-clone",
+    liveLink: "https://shopify-dashboard-clone-main.netlify.app/",
+  },
+
   // Add more projects as needed
 ];
 
