@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Loader from "./components/Loader/Loader";
 import NavBar from "./components/NavBar";
 import { useState, useEffect } from "react";
+import Projects from "./components/Projects";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,6 +25,7 @@ function App() {
           <NavBar />
           <Hero />
           <About />
+          <Projects />
         </>
       )}
     </div>
