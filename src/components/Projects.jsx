@@ -53,7 +53,7 @@ const projects = [
 const Projects = () => {
   return (
     <section className="text-textClr flex mt-12 pb-12 w-full dark:text-textClrDark">
-      <div className="container w-[80%] mx-auto px-6 justify-center items-center flex flex-col">
+      <div className="container lg:w-[80%] w-[90%] mx-auto px-6 justify-center items-center flex flex-col">
         <h2 className="text-3xl font-bold mb-8">
           <span className="text-accentClrDark dark:text-accentClr">My</span>
           Projects
