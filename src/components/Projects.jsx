@@ -6,8 +6,26 @@ import mentorme from "./images/mentorme.png";
 import gadgstore from "./images/gadgstore.png";
 import mohammed from "./images/mohammed.png";
 import shopifyclone from "./images/shopifyclone.png";
+import delve from "./images/delve-landing.png";
+import Starlite from "./images/starlite-landing.png";
 
 const projects = [
+  {
+    name: "Delve - Learn AI ",
+    description:
+      "An imptessive project for learning Languages in an intresting and interactive way. Project built with a team of developers during development HNG internship",
+    image: delve,
+    githubLink: "https://github.com/",
+    liveLink: "https://delve.fun/",
+  },
+  {
+    name: "Starlite Care WebSite",
+    description:
+      "A modern and professional website developed for a prestigious Care giver org in the United States ",
+    image: Starlite,
+    githubLink: "",
+    liveLink: "https://starlite-care.vercel.app/",
+  },
   {
     name: "Popsabey's Portfolio UI/UX Designer",
     description:
