@@ -32,7 +32,7 @@ const projects = [
       "An impressive portfolio showcasing the exceptional design skills of a top-tier UI/UX designer.",
     image: pops,
     githubLink: "https://github.com/LollyTim/popsabeys-portfolio",
-    liveLink: "https://popsabeys.vercel.app/",
+    liveLink: "https://popsabey.com/",
   },
   {
     name: "FawazLaw Website",
@@ -95,7 +95,7 @@ const Projects = () => {
               <img
                 src={project.image}
                 alt={project.name}
-                className="w-full h-48 object-cover rounded-lg mb-4"
+                className="w-full h-64 object-cover rounded-lg mb-4"
               />
               <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
               <p className="mb-4">{project.description}</p>
